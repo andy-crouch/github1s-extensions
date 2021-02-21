@@ -76,12 +76,12 @@ function isGitHub1sRootDomain(url, github1sRootDomain = extensionRootDomains.GIT
 
 /**
  * Generates an object that contains the next allowable state and associated url.
- * 
+ *
  * If the previousTabExtensionState is UNAVAILABLE then the previousTabExtensionState and url values are returned.
- * 
- * If the previousTabExtensionState is INACTIVE then the ACTIVE state is returned with a new, updated url to represent the transitioned state. 
- * If the previousTabExtensionState is ACTIVE then the INACTIVE state is returned with a new, updated url to represent the transitioned state. 
- * 
+ *
+ * If the previousTabExtensionState is INACTIVE then the ACTIVE state is returned with a new, updated url to represent the transitioned state.
+ * If the previousTabExtensionState is ACTIVE then the INACTIVE state is returned with a new, updated url to represent the transitioned state.
+ *
  * @param {String} url A String containing the current url for the active tab.
  * @param {Object} previousTabExtensionState An extensionStates state object representing the previous state when the extension icon was clicked
  * in the active tab.
@@ -91,8 +91,8 @@ function isGitHub1sRootDomain(url, github1sRootDomain = extensionRootDomains.GIT
 function transitionTabExtensionStateUsing(url, previousTabExtensionState, rootDomains = extensionRootDomains) {
   if (previousTabExtensionState === extensionStates.UNAVAILABLE) {
     return {
-      newExtensionState = previousTabExtensionState,
-      newStateUrl = url,
+      newExtensionState: previousTabExtensionState,
+      newStateUrl: url,
     };
   }
 
