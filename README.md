@@ -2,13 +2,27 @@
 
 ![GitHub 1s Extensions](screenshot.png)
 
-This repository contains the source code for the GitHub 1s related browser extensions that I have developed.
+This repository contains the source code for my [GitHub1s](https://github.com/conwnet/github1s) related browser extensions.
 
-Each extension adds a button to your browser extension icons so that when viewing a GitHub repository your can enable the extension to view the repository with VS Code from within your browser.
+## How The Extensions Work
+
+Each extension adds a button to your browser extension icons so that when viewing a GitHub repository your can enable the extension to view the repository within VS Code from within your browser.
 
 ![screenshot](browser-extension-icons.png)
 
-The core functionality is provided by the [GitHub1s](https://github.com/conwnet/github1s) project. The extensions here merely use the url feature provided by GitHub1s to enable the ability to view a repository within VS Code. Thanks should go to the project for a genuinely useful feature they have provided.
+The icons are coloured as follows:
+
+- Dark Gray - You are not viewing a GitHub domain, the GitHub 1s functionality is not available.
+- Light Gray - You are viewing a GitHub repository, the GitHub 1s functionality is not enabled.
+- Blue - You are viewing a GitHub repository, the GitHub 1s functionality is enabled.
+
+The icons were provided kindly by [Ronak Rai](https://www.linkedin.com/in/ronak-rai/).
+
+## The GitHub1s Project
+
+The core functionality is provided by the [GitHub1s](https://github.com/conwnet/github1s) project. The extensions here merely use the url feature provided by GitHub1s to enable the ability to view a repository within VS Code.
+
+Thanks should go to the project for a genuinely useful feature they have provided.
 
 ## Getting Started
 
@@ -38,7 +52,7 @@ Details to be added.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests to this project.
 
 ## Versioning
 
